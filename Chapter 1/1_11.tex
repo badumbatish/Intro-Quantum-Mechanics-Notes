@@ -1,0 +1,71 @@
+\subsection{1.11 The Lorentz transformation}
+
+The section starts out with the \textbf{standard configuration}. After that, the incorrect \textbf{Galilean transformation} is introduced as the stepping stone for the correct \textbf{Lorentz transformation} or alternatively the \textbf{Lorentz-Einstein transformation}
+
+\subsubsection{Galilean transformation}
+
+With the \textbf{standard configuration} in page 25
+
+\begin{equation*}
+    \begin{aligned}
+        x' &= x - vt \\
+        y' &= y \\
+        z' &= z \\
+        t' &= t
+    \end{aligned}
+\end{equation*}
+
+This set of equations (incorrectly) transforms the coordinates $x,y,z,t$ of any event in $S$ into the coordinates $x', y', z', t'$ of that event in $S'$
+
+\subsubsection{The Lorentz(-Einstein) transformation}
+
+Of course, having studied from chapter 1.1 to chapter 1.10, we are not some fool who thinks the world isn't relativistic anymore. On the contrary, it must be!
+
+Let us identify the ``normal" frame and the ``unique frame".
+
+The unique frame is the frame where the measured object is at rest. Thus, $S'$ is the unique frame and $S$ is the normal frame.
+
+Measuring in $S'$, the distance measured from $O'$ to $P'$ is $x_{S'}' = x'$ but the same distance measure in $S$ is $x_{S}'= x - vt$. Then by the length-contraction formula
+
+\begin{align*}
+    x_{S}' &= \frac{x_{S'}'}{\gamma} \\
+    x - vt &= \frac{x'}{\gamma} \\
+\end{align*}
+or 
+\begin{align*}
+    x' &= \gamma (x - vt)
+\end{align*}
+
+We have figured out $x'$ in terms of $x$ and $t$. Since $y' = y$ and $z' = z$, we need to find $t'$ in terms of the variables measured in the frame $S$. 
+
+Following the argument in the book, I will try to manipulate algebraically the equation for $t'$:
+
+\begin{align*}
+    t' &= \gamma t - \frac{\gamma^2 - 1}{\gamma v}x \\
+    t' &= \gamma (t - \frac{\gamma^2 - 1}{\gamma^2 v}x ) \\
+    t' &= \gamma (t - \frac{x}{v} \frac{\gamma ^ 2 -1}{\gamma^2 v}) \\
+    t' &= \gamma (t - \frac{x}{v} (1 - \frac{1}{\gamma^2} )) \\
+    t' &= \gamma (t - \frac{x}{v} (1 - \frac{1}{\frac{1}{1-\beta^2}} )) \\
+    t' &= \gamma (t - \frac{x}{v} (1 - (1-\beta^2) )) \\
+    t' &= \gamma (t - \frac{x}{v} \beta^2) \\ 
+    t' &= \gamma (t - \frac{x}{v} \frac{v^2}{c^2} )\\
+    t' &= \gamma (t - \frac{xv}{c^2})
+\end{align*}
+
+Then the set of equations representing the \textbf{Lorentz transformation} is
+\begin{align*}
+    x' &= \gamma (x - vt) \\
+    y' &= y \\
+    z' &= z \\
+    t' &= \gamma (t - \frac{vx}{c^2})
+\end{align*}
+
+Suppose we want to measure something P at rest in $S$, then as seen from point P, the car will be moving forward with velocity $v$ instead of seeing from point $P'$ the whole frame $S$ moves back $-v$ velocity. Then we can apply the Lorentz transformation by replacing $x', y', z', t'$ with $x, y, z, t$ to form  the \textbf{inverse Lorentz transformation}
+
+\begin{align*}
+    x &= \gamma (x' + vt') \\
+    y &= y' \\
+    z &= z' \\
+    t &= \gamma (t' + \frac{vx'}{c^2})
+\end{align*}
+
