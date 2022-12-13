@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{hyperref} % for referrencing
-
+\usepackage{import}
 \usepackage{amsmath}
 
 
@@ -43,18 +43,5 @@
 
 \tableofcontents
 Use the book of Modern Physics for Scientists and Engineers 2nd Edition
-\section{The Space and Time of Relativity}
-\input{Chapter 1/1_1.tex}
-\input{Chapter 1/1_2.tex}
-\input{Chapter 1/1_3.tex}
-\input{Chapter 1/1_4.tex}
-\input{Chapter 1/1_5.tex}
-\input{Chapter 1/1_6.tex}
-\input{Chapter 1/1_7.tex} 
-\input{Chapter 1/1_8.tex}
-\input{Chapter 1/1_9.tex}
-\input{Chapter 1/1_10.tex}
-\input{Chapter 1/1_11.tex}
-\input{Chapter 1/1_12.tex}
-\input{Chapter 1/1_13.tex}
+\subimport{inputs/}{inputs.tex}
 \end{document}
