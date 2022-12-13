@@ -1,38 +1,6 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
 
-\usepackage{hyperref} % for referrencing
-\usepackage{import}
-\usepackage{amsmath}
-
-
-%%%%%%%%%%%%%%%%%%
-% here are more "standard" packages
-\usepackage{amssymb} % extra math symbols
-\usepackage{amsthm} % fancy theorems & examples
-\usepackage{xcolor} % lets me color my comments
-%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\jcomm}[1]{{\color{red}(#1)}} % for comments
-%%%%%%%%%%%%%%%%%%%%%%%
-% this will let us make "enviornments" that look nice, i.e., theorems and examples
-
-% the first curly brace tells you how you will call this in your code, i.e., here I can type \begin{theorem} .... \end{theorem}, or for the 2nd one, \begin{thm} ... \end{thm}
-% the second curly brace tells you how it will be dispplayed in the pdf, so the 1st & 2nd will both display as Theorem.
-% the square brackets tells you how the numbering works. If it comes at the end, we'll take sub-numbering. So for the 1st, if we are in section 2, the 1st theorem is 2.1, then 2.2, etc.. If the square bracket comes between the curly braces, then we'll use the same numbering. So if I use \begin{lemma} ... \end{lemma} after theorem 2.2, this will be Lemma 2.3
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{thm}[theorem]{Theorem}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{prop}[theorem]{Proposition}
-\newtheorem{cor}[theorem]{Corollary}
-\newtheorem{fact}[theorem]{Fact}
-
-% this is a different way of formatting envirnomnets
-\theoremstyle{definition}
-\newtheorem{defn}[theorem]{Definition}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{rmk}[theorem]{Remark}
-\newtheorem{ex}[theorem]{Example}
+\usepackage{pkgs} % file pkgs.sty
 
 \title{Quantum Mechanics Notes: Class 250C}
 \author{Jasmine Tang }
